@@ -1,0 +1,79 @@
+[
+  {
+    "proposal": "A",
+    "rank": 1,
+    "status": "ranked",
+    "score": 73.13,
+    "score_unrounded": 73.125,
+    "reason": "Ranked first among cleared proposals (73.13/100); highest assessed experience and a faster schedule than E offset the price score.",
+    "score_breakdown": {
+      "experience": 30.0,
+      "price": 6.88,
+      "timeline": 7.5,
+      "warranty": 13.75,
+      "team_approach": 15.0
+    },
+    "review_flags": []
+  },
+  {
+    "proposal": "B",
+    "rank": null,
+    "status": "flagged",
+    "score": 56.76,
+    "score_unrounded": 56.763392857142854,
+    "reason": "Provisional score only; bidder-held Ontario electrical licensing is not established, so this proposal is not ranked pending review.",
+    "score_breakdown": {
+      "experience": 12.86,
+      "price": 22.03,
+      "timeline": 11.25,
+      "warranty": 10.63,
+      "team_approach": 0.0
+    },
+    "review_flags": [
+      "Mandatory evidence is unresolved: Ontario electrical contractor licence held by bidder and stated in proposal."
+    ]
+  },
+  {
+    "proposal": "C",
+    "rank": null,
+    "status": "flagged",
+    "score": null,
+    "score_unrounded": null,
+    "reason": "Flagged for a reviewer-directed instruction in the document and an unclear qualifying five-year experience count; no final score or rank is released.",
+    "score_breakdown": null,
+    "review_flags": [
+      "Instruction-like content aimed at automated reviewers was detected; it is ignored and requires human review.",
+      "The aggregate experience period does not establish how many qualifying projects fall within the configured five-year window.",
+      "Qualifying installation count within the five-year window is missing or unclear."
+    ]
+  },
+  {
+    "proposal": "D",
+    "rank": null,
+    "status": "flagged",
+    "score": null,
+    "score_unrounded": null,
+    "reason": "The completion schedule is not stated, so the timeline points cannot be calculated; request a committed duration before ranking.",
+    "score_breakdown": null,
+    "review_flags": [
+      "A committed completion duration is not provided.",
+      "A supported completion duration is required for scoring."
+    ]
+  },
+  {
+    "proposal": "E",
+    "rank": 2,
+    "status": "ranked",
+    "score": 58.24,
+    "score_unrounded": 58.23660714285714,
+    "reason": "Ranked second among cleared proposals (58.24/100); strong warranty and team evidence are offset by fewer qualifying installs and a slower schedule than A.",
+    "score_breakdown": {
+      "experience": 17.14,
+      "price": 5.47,
+      "timeline": 5.63,
+      "warranty": 15.0,
+      "team_approach": 15.0
+    },
+    "review_flags": []
+  }
+]

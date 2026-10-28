@@ -1,0 +1,37 @@
+[
+  {
+    "proposal": "A",
+    "rank": 1,
+    "status": "ranked",
+    "score": 73.13,
+    "reason": "Ranked first among cleared proposals (73.13/100); highest assessed experience and a faster schedule than E offset the price score."
+  },
+  {
+    "proposal": "B",
+    "rank": null,
+    "status": "flagged",
+    "score": 56.76,
+    "reason": "Provisional score only; bidder-held Ontario electrical licensing is not established, so this proposal is not ranked pending review."
+  },
+  {
+    "proposal": "C",
+    "rank": null,
+    "status": "flagged",
+    "score": null,
+    "reason": "Flagged for a reviewer-directed instruction in the document and an unclear qualifying five-year experience count; no final score or rank is released."
+  },
+  {
+    "proposal": "D",
+    "rank": null,
+    "status": "flagged",
+    "score": null,
+    "reason": "The completion schedule is not stated, so the timeline points cannot be calculated; request a committed duration before ranking."
+  },
+  {
+    "proposal": "E",
+    "rank": 2,
+    "status": "ranked",
+    "score": 58.24,
+    "reason": "Ranked second among cleared proposals (58.24/100); strong warranty and team evidence are offset by fewer qualifying installs and a slower schedule than A."
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "source_note": "Normalized facts manually curated from the fictional proposal summaries in the assessment brief. No proposal prose or verbatim evidence quotes are reproduced here. The fixture demonstrates scoring only; it is not an AI-extraction result.",
+  "proposals": [
+    {
+      "proposal": "A",
+      "mandatory": {
+        "electrical_licence_held_by_bidder": {"value": true, "state": "supported"},
+        "wsib_clearance": {"value": true, "state": "supported"},
+        "liability_insurance_millions": {"value": 5, "state": "supported"}
+      },
+      "facts": {
+        "qualifying_installs_last_5_years": {"value": 14, "state": "supported"},
+        "price_cad": {"value": 238000, "state": "supported"},
+        "timeline_weeks": {"value": 12, "state": "supported"},
+        "panel_warranty_years": {"value": 25, "state": "supported"},
+        "workmanship_warranty_years": {"value": 10, "state": "supported"},
+        "team_approach": {
+          "named_project_lead": true,
+          "crew_specified": true,
+          "safety_plan": true,
+          "monitoring_plan": true
+        }
+      },
+      "security_alerts": [],
+      "ambiguities": []
+    },
+    {
+      "proposal": "B",
+      "mandatory": {
+        "electrical_licence_held_by_bidder": {"value": null, "state": "ambiguous"},
+        "wsib_clearance": {"value": true, "state": "supported"},
+        "liability_insurance_millions": {"value": 5, "state": "supported"}
+      },
+      "facts": {
+        "qualifying_installs_last_5_years": {"value": 6, "state": "supported"},
+        "price_cad": {"value": 189500, "state": "supported"},
+        "timeline_weeks": {"value": 10, "state": "supported"},
+        "panel_warranty_years": {"value": 25, "state": "supported"},
+        "workmanship_warranty_years": {"value": 5, "state": "supported"},
+        "team_approach": {
+          "named_project_lead": false,
+          "crew_specified": false,
+          "safety_plan": false,
+          "monitoring_plan": false
+        }
+      },
+      "security_alerts": [],
+      "ambiguities": []
+    },
+    {
+      "proposal": "C",
+      "mandatory": {
+        "electrical_licence_held_by_bidder": {"value": true, "state": "supported"},
+        "wsib_clearance": {"value": true, "state": "supported"},
+        "liability_insurance_millions": {"value": 5, "state": "supported"}
+      },
+      "facts": {
+        "qualifying_installs_last_5_years": {"value": null, "state": "ambiguous"},
+        "price_cad": {"value": 244000, "state": "supported"},
+        "timeline_weeks": {"value": 14, "state": "supported"},
+        "panel_warranty_years": {"value": 25, "state": "supported"},
+        "workmanship_warranty_years": {"value": 10, "state": "supported"},
+        "team_approach": {
+          "named_project_lead": true,
+          "crew_specified": true,
+          "safety_plan": false,
+          "monitoring_plan": false
+        }
+      },
+      "security_alerts": [
+        {
+          "kind": "instruction_like_content",
+          "description": "Text directed at automated review systems attempts to dictate the proposal's rank and score."
+        }
+      ],
+      "ambiguities": [
+        "The aggregate experience period does not establish how many qualifying projects fall within the configured five-year window."
+      ]
+    },
+    {
+      "proposal": "D",
+      "mandatory": {
+        "electrical_licence_held_by_bidder": {"value": true, "state": "supported"},
+        "wsib_clearance": {"value": true, "state": "supported"},
+        "liability_insurance_millions": {"value": 5, "state": "supported"}
+      },
+      "facts": {
+        "qualifying_installs_last_5_years": {"value": 11, "state": "supported"},
+        "price_cad": {"value": 231000, "state": "supported"},
+        "timeline_weeks": {"value": null, "state": "missing"},
+        "panel_warranty_years": {"value": 25, "state": "supported"},
+        "workmanship_warranty_years": {"value": 10, "state": "supported"},
+        "team_approach": {
+          "named_project_lead": true,
+          "crew_specified": false,
+          "safety_plan": true,
+          "monitoring_plan": false
+        }
+      },
+      "security_alerts": [],
+      "ambiguities": [
+        "A committed completion duration is not provided."
+      ]
+    },
+    {
+      "proposal": "E",
+      "mandatory": {
+        "electrical_licence_held_by_bidder": {"value": true, "state": "supported"},
+        "wsib_clearance": {"value": true, "state": "supported"},
+        "liability_insurance_millions": {"value": 5, "state": "supported"}
+      },
+      "facts": {
+        "qualifying_installs_last_5_years": {"value": 8, "state": "supported"},
+        "price_cad": {"value": 242500, "state": "supported"},
+        "timeline_weeks": {"value": 13, "state": "supported"},
+        "panel_warranty_years": {"value": 25, "state": "supported"},
+        "workmanship_warranty_years": {"value": 12, "state": "supported"},
+        "team_approach": {
+          "named_project_lead": true,
+          "crew_specified": true,
+          "safety_plan": true,
+          "monitoring_plan": true
+        }
+      },
+      "security_alerts": [],
+      "ambiguities": []
+    }
+  ]
+}

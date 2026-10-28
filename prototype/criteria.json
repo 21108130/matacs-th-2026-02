@@ -1,0 +1,98 @@
+{
+  "category": "Commercial Solar Installation",
+  "currency": "CAD",
+  "budget_ceiling": 260000,
+  "completion_deadline_weeks": 16,
+  "criteria_version": "solar-v1-sample",
+  "mandatory_checks": [
+    {
+      "id": "electrical_licence_held_by_bidder",
+      "input_path": "mandatory.electrical_licence_held_by_bidder",
+      "kind": "boolean",
+      "required_value": true,
+      "description": "Ontario electrical contractor licence held by bidder and stated in proposal"
+    },
+    {
+      "id": "wsib_clearance",
+      "input_path": "mandatory.wsib_clearance",
+      "kind": "boolean",
+      "required_value": true,
+      "description": "WSIB clearance confirmed"
+    },
+    {
+      "id": "liability_insurance_millions",
+      "input_path": "mandatory.liability_insurance_millions",
+      "kind": "minimum_number",
+      "minimum": 5,
+      "description": "At least CAD 5 million liability insurance"
+    }
+  ],
+  "weights": {
+    "experience": 30,
+    "price": 25,
+    "timeline": 15,
+    "warranty": 15,
+    "team_approach": 15
+  },
+  "scoring": {
+    "experience": {
+      "input_path": "facts.qualifying_installs_last_5_years",
+      "max_points": 30,
+      "full_score_installs": 14
+    },
+    "price": {
+      "input_path": "facts.price_cad",
+      "max_points": 25,
+      "full_score_at_or_below_cad": 180000,
+      "zero_score_at_cad": 260000
+    },
+    "timeline": {
+      "input_path": "facts.timeline_weeks",
+      "max_points": 15,
+      "full_score_at_or_below_weeks": 8,
+      "zero_score_at_weeks": 16
+    },
+    "warranty": {
+      "panel_years_path": "facts.panel_warranty_years",
+      "workmanship_years_path": "facts.workmanship_warranty_years",
+      "max_points": 15,
+      "panel_points": 7.5,
+      "workmanship_points": 7.5,
+      "panel_years_full_score": 25,
+      "workmanship_years_full_score": 12
+    },
+    "team_approach": {
+      "max_points": 15,
+      "points_per_item": 3.75,
+      "items": [
+        {
+          "id": "named_project_lead",
+          "description": "Named project-lead commitment"
+        },
+        {
+          "id": "crew_specified",
+          "description": "Crew specified"
+        },
+        {
+          "id": "safety_plan",
+          "description": "Safety plan"
+        },
+        {
+          "id": "monitoring_plan",
+          "description": "Performance-monitoring plan"
+        }
+      ],
+      "missing_evidence_policy": "No points unless explicitly documented; unknown extraction state flags the proposal"
+    }
+  },
+  "ranking": {
+    "precision": 2,
+    "tie_break_order": [
+      "lower_price",
+      "shorter_timeline",
+      "proposal_letter"
+    ],
+    "rank_only_if_mandatory_checks_pass": true,
+    "rank_only_if_no_review_flags": true
+  }
+}
